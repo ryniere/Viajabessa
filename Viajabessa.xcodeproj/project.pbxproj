@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41DA2E051A34B49200FE914A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E041A34B49200FE914A /* AppDelegate.swift */; };
+		41DA2E081A34B49200FE914A /* Viajabessa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E061A34B49200FE914A /* Viajabessa.xcdatamodeld */; };
+		41DA2E0A1A34B49200FE914A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E091A34B49200FE914A /* ViewController.swift */; };
+		41DA2E0D1A34B49200FE914A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DA2E0B1A34B49200FE914A /* Main.storyboard */; };
+		41DA2E0F1A34B49200FE914A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DA2E0E1A34B49200FE914A /* Images.xcassets */; };
+		41DA2E121A34B49200FE914A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41DA2E101A34B49200FE914A /* LaunchScreen.xib */; };
+		41DA2E1E1A34B49200FE914A /* ViajabessaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E1D1A34B49200FE914A /* ViajabessaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41DA2E181A34B49200FE914A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41DA2DF71A34B49200FE914A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41DA2DFE1A34B49200FE914A;
+			remoteInfo = Viajabessa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41DA2DFF1A34B49200FE914A /* Viajabessa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viajabessa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41DA2E031A34B49200FE914A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41DA2E041A34B49200FE914A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41DA2E071A34B49200FE914A /* Viajabessa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Viajabessa.xcdatamodel; sourceTree = "<group>"; };
+		41DA2E091A34B49200FE914A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41DA2E0C1A34B49200FE914A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41DA2E0E1A34B49200FE914A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		41DA2E111A34B49200FE914A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		41DA2E171A34B49200FE914A /* ViajabessaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViajabessaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41DA2E1C1A34B49200FE914A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41DA2E1D1A34B49200FE914A /* ViajabessaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViajabessaTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41DA2DFC1A34B49200FE914A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41DA2E141A34B49200FE914A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41DA2DF61A34B49200FE914A = {
+			isa = PBXGroup;
+			children = (
+				41DA2E011A34B49200FE914A /* Viajabessa */,
+				41DA2E1A1A34B49200FE914A /* ViajabessaTests */,
+				41DA2E001A34B49200FE914A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41DA2E001A34B49200FE914A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41DA2DFF1A34B49200FE914A /* Viajabessa.app */,
+				41DA2E171A34B49200FE914A /* ViajabessaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41DA2E011A34B49200FE914A /* Viajabessa */ = {
+			isa = PBXGroup;
+			children = (
+				41DA2E041A34B49200FE914A /* AppDelegate.swift */,
+				41DA2E091A34B49200FE914A /* ViewController.swift */,
+				41DA2E0B1A34B49200FE914A /* Main.storyboard */,
+				41DA2E0E1A34B49200FE914A /* Images.xcassets */,
+				41DA2E101A34B49200FE914A /* LaunchScreen.xib */,
+				41DA2E061A34B49200FE914A /* Viajabessa.xcdatamodeld */,
+				41DA2E021A34B49200FE914A /* Supporting Files */,
+			);
+			path = Viajabessa;
+			sourceTree = "<group>";
+		};
+		41DA2E021A34B49200FE914A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41DA2E031A34B49200FE914A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41DA2E1A1A34B49200FE914A /* ViajabessaTests */ = {
+			isa = PBXGroup;
+			children = (
+				41DA2E1D1A34B49200FE914A /* ViajabessaTests.swift */,
+				41DA2E1B1A34B49200FE914A /* Supporting Files */,
+			);
+			path = ViajabessaTests;
+			sourceTree = "<group>";
+		};
+		41DA2E1B1A34B49200FE914A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41DA2E1C1A34B49200FE914A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41DA2DFE1A34B49200FE914A /* Viajabessa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41DA2E211A34B49200FE914A /* Build configuration list for PBXNativeTarget "Viajabessa" */;
+			buildPhases = (
+				41DA2DFB1A34B49200FE914A /* Sources */,
+				41DA2DFC1A34B49200FE914A /* Frameworks */,
+				41DA2DFD1A34B49200FE914A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Viajabessa;
+			productName = Viajabessa;
+			productReference = 41DA2DFF1A34B49200FE914A /* Viajabessa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41DA2E161A34B49200FE914A /* ViajabessaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41DA2E241A34B49200FE914A /* Build configuration list for PBXNativeTarget "ViajabessaTests" */;
+			buildPhases = (
+				41DA2E131A34B49200FE914A /* Sources */,
+				41DA2E141A34B49200FE914A /* Frameworks */,
+				41DA2E151A34B49200FE914A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41DA2E191A34B49200FE914A /* PBXTargetDependency */,
+			);
+			name = ViajabessaTests;
+			productName = ViajabessaTests;
+			productReference = 41DA2E171A34B49200FE914A /* ViajabessaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41DA2DF71A34B49200FE914A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ryniere dos Santos Silva";
+				TargetAttributes = {
+					41DA2DFE1A34B49200FE914A = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Z6KC2UFRV2;
+					};
+					41DA2E161A34B49200FE914A = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 41DA2DFE1A34B49200FE914A;
+					};
+				};
+			};
+			buildConfigurationList = 41DA2DFA1A34B49200FE914A /* Build configuration list for PBXProject "Viajabessa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41DA2DF61A34B49200FE914A;
+			productRefGroup = 41DA2E001A34B49200FE914A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41DA2DFE1A34B49200FE914A /* Viajabessa */,
+				41DA2E161A34B49200FE914A /* ViajabessaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41DA2DFD1A34B49200FE914A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41DA2E0D1A34B49200FE914A /* Main.storyboard in Resources */,
+				41DA2E121A34B49200FE914A /* LaunchScreen.xib in Resources */,
+				41DA2E0F1A34B49200FE914A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41DA2E151A34B49200FE914A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41DA2DFB1A34B49200FE914A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41DA2E0A1A34B49200FE914A /* ViewController.swift in Sources */,
+				41DA2E081A34B49200FE914A /* Viajabessa.xcdatamodeld in Sources */,
+				41DA2E051A34B49200FE914A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41DA2E131A34B49200FE914A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41DA2E1E1A34B49200FE914A /* ViajabessaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41DA2E191A34B49200FE914A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41DA2DFE1A34B49200FE914A /* Viajabessa */;
+			targetProxy = 41DA2E181A34B49200FE914A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41DA2E0B1A34B49200FE914A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41DA2E0C1A34B49200FE914A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41DA2E101A34B49200FE914A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41DA2E111A34B49200FE914A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41DA2E1F1A34B49200FE914A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41DA2E201A34B49200FE914A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41DA2E221A34B49200FE914A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Viajabessa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		41DA2E231A34B49200FE914A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Viajabessa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		41DA2E251A34B49200FE914A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ViajabessaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viajabessa.app/Viajabessa";
+			};
+			name = Debug;
+		};
+		41DA2E261A34B49200FE914A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ViajabessaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viajabessa.app/Viajabessa";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41DA2DFA1A34B49200FE914A /* Build configuration list for PBXProject "Viajabessa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41DA2E1F1A34B49200FE914A /* Debug */,
+				41DA2E201A34B49200FE914A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41DA2E211A34B49200FE914A /* Build configuration list for PBXNativeTarget "Viajabessa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41DA2E221A34B49200FE914A /* Debug */,
+				41DA2E231A34B49200FE914A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		41DA2E241A34B49200FE914A /* Build configuration list for PBXNativeTarget "ViajabessaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41DA2E251A34B49200FE914A /* Debug */,
+				41DA2E261A34B49200FE914A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		41DA2E061A34B49200FE914A /* Viajabessa.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				41DA2E071A34B49200FE914A /* Viajabessa.xcdatamodel */,
+			);
+			currentVersion = 41DA2E071A34B49200FE914A /* Viajabessa.xcdatamodel */;
+			path = Viajabessa.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 41DA2DF71A34B49200FE914A /* Project object */;
+}
