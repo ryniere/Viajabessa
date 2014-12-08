@@ -17,8 +17,9 @@ class Package{
 	var days:Int!
 	var price:Double = 0.0
 	var currency:String!
+	var imageUrl:String!
 	
-	init(id:String, title:String, city:String, days:Int, price:Double, currency:String){
+	init(id:String, title:String, city:String, days:Int, price:Double, currency:String, imageUrl:String){
 		
 		self.id = id
 		self.title = title
@@ -26,5 +27,6 @@ class Package{
 		self.days = days
 		self.price = price
 		self.currency = currency
+		self.imageUrl = imageUrl
 		}
 }

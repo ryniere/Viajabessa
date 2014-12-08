@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 func parseJSON(inputData: NSData) -> NSDictionary{
 	var error: NSError?
@@ -14,6 +15,17 @@ func parseJSON(inputData: NSData) -> NSDictionary{
 	var boardsDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers, error: &error) as NSDictionary
 	return boardsDictionary
 }
+
+func downloadImage(url: NSURL, handler: ((image: UIImage, NSError!) -> Void))
+{
+	var imageRequest: NSURLRequest = NSURLRequest(URL: url)
+	NSURLConnection.sendAsynchronousRequest(imageRequest,
+		queue: NSOperationQueue.mainQueue(),
+		completionHandler:{response, data, error in
+			handler(image: UIImage(data: data)!, error)
+	})
+}
+
 
 
 func getPackagesFromServer( onCompletation: () -> Void, onFailure: () -> Void){
@@ -33,8 +45,8 @@ func getPackagesFromServer( onCompletation: () -> Void, onFailure: () -> Void){
 		var json = parseJSON(data)
 		
 		if let packages = json["packages"] as? NSArray {
-			var i:Int = 0 ;
 			
+			packagesList = []
 			for package in packages{
 				
 				var id:String = package["id"] as String!
@@ -43,8 +55,9 @@ func getPackagesFromServer( onCompletation: () -> Void, onFailure: () -> Void){
 				var city:String = package["city"] as String!
 				var currency:String = package["currency"] as String!
 				var days:Int = package["days"] as Int!
+				var imageUrl:String = package["imageUrl"] as String!
 				
-				var newPackage = Package(id: id, title: title, city: city, days: days, price: price, currency: currency)
+				var newPackage = Package(id: id, title: title, city: city, days: days, price: price, currency: currency, imageUrl:imageUrl)
 				
 				packagesList.append(newPackage)
 				

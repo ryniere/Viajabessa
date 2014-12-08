@@ -8,35 +8,39 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="listPackagesCellID" selectionStyle="default" indentationWidth="10" rowHeight="205" id="Drn-X2-ZUq" customClass="ListPackagesTableViewCell" customModule="Viajabessa" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="205"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="listPackagesCellID" selectionStyle="default" indentationWidth="10" rowHeight="230" id="Drn-X2-ZUq" customClass="ListPackagesTableViewCell" customModule="Viajabessa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="225"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Drn-X2-ZUq" id="HrZ-PO-M8e">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ANv-lu-4h8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ANv-lu-4h8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="320" id="HQ9-Yj-sKj"/>
+                            <constraint firstAttribute="height" constant="163" id="Qps-XP-a1b"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$300" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qz6-wU-R2o">
-                        <rect key="frame" x="262" y="175" width="50" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="11 Diárias" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uav-hf-hbm">
-                        <rect key="frame" x="8" y="151" width="77" height="21"/>
+                        <rect key="frame" x="8" y="160" width="77" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1 Pessoa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sv4-Vp-S2Z">
-                        <rect key="frame" x="93" y="151" width="82" height="21"/>
+                        <rect key="frame" x="93" y="160" width="82" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rio de Janeiro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="123-pf-ftz">
-                        <rect key="frame" x="8" y="170" width="146" height="40"/>
+                        <rect key="frame" x="8" y="176" width="146" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="R$300" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qz6-wU-R2o">
+                        <rect key="frame" x="262" y="185" width="50" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -44,24 +48,25 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="qz6-wU-R2o" secondAttribute="bottom" constant="1" id="0pH-WL-qDO"/>
-                    <constraint firstItem="123-pf-ftz" firstAttribute="top" secondItem="Sv4-Vp-S2Z" secondAttribute="bottom" constant="-2" id="AYE-p3-uJn"/>
                     <constraint firstItem="123-pf-ftz" firstAttribute="leading" secondItem="HrZ-PO-M8e" secondAttribute="leadingMargin" id="C4C-Su-z9O"/>
-                    <constraint firstItem="ANv-lu-4h8" firstAttribute="top" secondItem="HrZ-PO-M8e" secondAttribute="topMargin" constant="8" id="HB7-lj-wVi"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="123-pf-ftz" secondAttribute="bottom" constant="1" id="aPg-C5-efw"/>
-                    <constraint firstItem="ANv-lu-4h8" firstAttribute="leading" secondItem="HrZ-PO-M8e" secondAttribute="leadingMargin" constant="8" id="hOE-Il-cQl"/>
+                    <constraint firstItem="123-pf-ftz" firstAttribute="top" secondItem="ANv-lu-4h8" secondAttribute="bottom" constant="7" id="Fs0-85-kw8"/>
+                    <constraint firstItem="ANv-lu-4h8" firstAttribute="top" secondItem="HrZ-PO-M8e" secondAttribute="topMargin" id="HB7-lj-wVi"/>
+                    <constraint firstItem="123-pf-ftz" firstAttribute="top" secondItem="Uav-hf-hbm" secondAttribute="bottom" constant="-5" id="Rc0-9x-1X2"/>
+                    <constraint firstItem="ANv-lu-4h8" firstAttribute="leading" secondItem="HrZ-PO-M8e" secondAttribute="leadingMargin" id="hOE-Il-cQl"/>
                     <constraint firstItem="Sv4-Vp-S2Z" firstAttribute="leading" secondItem="Uav-hf-hbm" secondAttribute="trailing" constant="8" id="okx-vO-XYZ"/>
-                    <constraint firstItem="123-pf-ftz" firstAttribute="top" secondItem="Uav-hf-hbm" secondAttribute="bottom" constant="-2" id="pDp-IW-rmo"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="ANv-lu-4h8" secondAttribute="trailing" constant="8" id="vK3-Eb-Kmt"/>
+                    <constraint firstItem="Sv4-Vp-S2Z" firstAttribute="top" secondItem="ANv-lu-4h8" secondAttribute="bottom" constant="-3" id="pTX-T7-o2X"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ANv-lu-4h8" secondAttribute="trailing" id="vK3-Eb-Kmt"/>
                     <constraint firstItem="qz6-wU-R2o" firstAttribute="trailing" secondItem="HrZ-PO-M8e" secondAttribute="trailingMargin" id="wkV-Jk-jQB"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="cityLabel" destination="123-pf-ftz" id="qUs-Os-L8X"/>
                 <outlet property="daysLabel" destination="Uav-hf-hbm" id="vfe-BI-jox"/>
+                <outlet property="packageImage" destination="ANv-lu-4h8" id="unU-au-4tg"/>
                 <outlet property="peopleLabel" destination="Sv4-Vp-S2Z" id="wl9-aL-u9L"/>
                 <outlet property="priceLabel" destination="qz6-wU-R2o" id="SZ5-fk-8oV"/>
             </connections>
-            <point key="canvasLocation" x="264" y="297.5"/>
+            <point key="canvasLocation" x="264" y="307.5"/>
         </tableViewCell>
     </objects>
 </document>

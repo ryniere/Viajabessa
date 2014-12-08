@@ -13,6 +13,7 @@ import UIKit
 class ListPackagesTableViewCell:UITableViewCell{
 	
 	
+	@IBOutlet weak var packageImage: UIImageView!
 	@IBOutlet weak var cityLabel: UILabel!
 	@IBOutlet weak var daysLabel: UILabel!
 	@IBOutlet weak var peopleLabel: UILabel!
