@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411E24F31A3625900003E1AC /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E24F21A3625900003E1AC /* GlobalVariables.swift */; };
 		41DA2E051A34B49200FE914A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E041A34B49200FE914A /* AppDelegate.swift */; };
 		41DA2E081A34B49200FE914A /* Viajabessa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E061A34B49200FE914A /* Viajabessa.xcdatamodeld */; };
-		41DA2E0A1A34B49200FE914A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E091A34B49200FE914A /* ViewController.swift */; };
+		41DA2E0A1A34B49200FE914A /* ListPackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E091A34B49200FE914A /* ListPackagesViewController.swift */; };
 		41DA2E0D1A34B49200FE914A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DA2E0B1A34B49200FE914A /* Main.storyboard */; };
 		41DA2E0F1A34B49200FE914A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DA2E0E1A34B49200FE914A /* Images.xcassets */; };
 		41DA2E121A34B49200FE914A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41DA2E101A34B49200FE914A /* LaunchScreen.xib */; };
 		41DA2E1E1A34B49200FE914A /* ViajabessaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E1D1A34B49200FE914A /* ViajabessaTests.swift */; };
+		41DA2E451A34FC3400FE914A /* ListPackagesTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41DA2E441A34FC3400FE914A /* ListPackagesTableCell.xib */; };
+		41DA2E481A34FEAE00FE914A /* ListPackagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E471A34FEAE00FE914A /* ListPackagesTableViewCell.swift */; };
+		41DA2E4B1A35015D00FE914A /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E4A1A35015D00FE914A /* Package.swift */; };
+		41DA2E4D1A35039100FE914A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E4C1A35039100FE914A /* Constants.swift */; };
+		41DA2E4F1A35056900FE914A /* ServerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E4E1A35056900FE914A /* ServerFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +33,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		411E24F21A3625900003E1AC /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		41DA2DFF1A34B49200FE914A /* Viajabessa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viajabessa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DA2E031A34B49200FE914A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41DA2E041A34B49200FE914A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41DA2E071A34B49200FE914A /* Viajabessa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Viajabessa.xcdatamodel; sourceTree = "<group>"; };
-		41DA2E091A34B49200FE914A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41DA2E091A34B49200FE914A /* ListPackagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPackagesViewController.swift; sourceTree = "<group>"; };
 		41DA2E0C1A34B49200FE914A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41DA2E0E1A34B49200FE914A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		41DA2E111A34B49200FE914A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		41DA2E171A34B49200FE914A /* ViajabessaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViajabessaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DA2E1C1A34B49200FE914A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41DA2E1D1A34B49200FE914A /* ViajabessaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViajabessaTests.swift; sourceTree = "<group>"; };
+		41DA2E441A34FC3400FE914A /* ListPackagesTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListPackagesTableCell.xib; sourceTree = "<group>"; };
+		41DA2E471A34FEAE00FE914A /* ListPackagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPackagesTableViewCell.swift; sourceTree = "<group>"; };
+		41DA2E4A1A35015D00FE914A /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		41DA2E4C1A35039100FE914A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		41DA2E4E1A35056900FE914A /* ServerFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +91,16 @@
 		41DA2E011A34B49200FE914A /* Viajabessa */ = {
 			isa = PBXGroup;
 			children = (
-				41DA2E041A34B49200FE914A /* AppDelegate.swift */,
-				41DA2E091A34B49200FE914A /* ViewController.swift */,
-				41DA2E0B1A34B49200FE914A /* Main.storyboard */,
+				41DA2E491A35013900FE914A /* Model */,
+				41DA2E411A34FBAE00FE914A /* Main */,
+				41DA2E421A34FBBE00FE914A /* ViewControllers */,
+				41DA2E431A34FBDC00FE914A /* xibs */,
 				41DA2E0E1A34B49200FE914A /* Images.xcassets */,
-				41DA2E101A34B49200FE914A /* LaunchScreen.xib */,
 				41DA2E061A34B49200FE914A /* Viajabessa.xcdatamodeld */,
 				41DA2E021A34B49200FE914A /* Supporting Files */,
+				41DA2E4C1A35039100FE914A /* Constants.swift */,
+				41DA2E4E1A35056900FE914A /* ServerFunctions.swift */,
+				411E24F21A3625900003E1AC /* GlobalVariables.swift */,
 			);
 			path = Viajabessa;
 			sourceTree = "<group>";
@@ -113,6 +128,49 @@
 				41DA2E1C1A34B49200FE914A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41DA2E411A34FBAE00FE914A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				41DA2E041A34B49200FE914A /* AppDelegate.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		41DA2E421A34FBBE00FE914A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				41DA2E461A34FE3500FE914A /* TableCells */,
+				41DA2E091A34B49200FE914A /* ListPackagesViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		41DA2E431A34FBDC00FE914A /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				41DA2E0B1A34B49200FE914A /* Main.storyboard */,
+				41DA2E101A34B49200FE914A /* LaunchScreen.xib */,
+				41DA2E441A34FC3400FE914A /* ListPackagesTableCell.xib */,
+			);
+			name = xibs;
+			sourceTree = "<group>";
+		};
+		41DA2E461A34FE3500FE914A /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				41DA2E471A34FEAE00FE914A /* ListPackagesTableViewCell.swift */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
+		41DA2E491A35013900FE914A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41DA2E4A1A35015D00FE914A /* Package.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41DA2E0D1A34B49200FE914A /* Main.storyboard in Resources */,
+				41DA2E451A34FC3400FE914A /* ListPackagesTableCell.xib in Resources */,
 				41DA2E121A34B49200FE914A /* LaunchScreen.xib in Resources */,
 				41DA2E0F1A34B49200FE914A /* Images.xcassets in Resources */,
 			);
@@ -216,9 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41DA2E0A1A34B49200FE914A /* ViewController.swift in Sources */,
+				41DA2E481A34FEAE00FE914A /* ListPackagesTableViewCell.swift in Sources */,
+				41DA2E4B1A35015D00FE914A /* Package.swift in Sources */,
+				41DA2E0A1A34B49200FE914A /* ListPackagesViewController.swift in Sources */,
+				411E24F31A3625900003E1AC /* GlobalVariables.swift in Sources */,
+				41DA2E4F1A35056900FE914A /* ServerFunctions.swift in Sources */,
 				41DA2E081A34B49200FE914A /* Viajabessa.xcdatamodeld in Sources */,
 				41DA2E051A34B49200FE914A /* AppDelegate.swift in Sources */,
+				41DA2E4D1A35039100FE914A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +478,7 @@
 				41DA2E231A34B49200FE914A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41DA2E241A34B49200FE914A /* Build configuration list for PBXNativeTarget "ViajabessaTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +487,7 @@
 				41DA2E261A34B49200FE914A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
