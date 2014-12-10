@@ -21,18 +21,6 @@
                             <constraint firstAttribute="height" constant="163" id="Qps-XP-a1b"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="11 Diárias" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uav-hf-hbm">
-                        <rect key="frame" x="8" y="160" width="77" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1 Pessoa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sv4-Vp-S2Z">
-                        <rect key="frame" x="93" y="160" width="82" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rio de Janeiro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="123-pf-ftz">
                         <rect key="frame" x="8" y="176" width="146" height="40"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -51,19 +39,14 @@
                     <constraint firstItem="123-pf-ftz" firstAttribute="leading" secondItem="HrZ-PO-M8e" secondAttribute="leadingMargin" id="C4C-Su-z9O"/>
                     <constraint firstItem="123-pf-ftz" firstAttribute="top" secondItem="ANv-lu-4h8" secondAttribute="bottom" constant="7" id="Fs0-85-kw8"/>
                     <constraint firstItem="ANv-lu-4h8" firstAttribute="top" secondItem="HrZ-PO-M8e" secondAttribute="topMargin" id="HB7-lj-wVi"/>
-                    <constraint firstItem="123-pf-ftz" firstAttribute="top" secondItem="Uav-hf-hbm" secondAttribute="bottom" constant="-5" id="Rc0-9x-1X2"/>
                     <constraint firstItem="ANv-lu-4h8" firstAttribute="leading" secondItem="HrZ-PO-M8e" secondAttribute="leadingMargin" id="hOE-Il-cQl"/>
-                    <constraint firstItem="Sv4-Vp-S2Z" firstAttribute="leading" secondItem="Uav-hf-hbm" secondAttribute="trailing" constant="8" id="okx-vO-XYZ"/>
-                    <constraint firstItem="Sv4-Vp-S2Z" firstAttribute="top" secondItem="ANv-lu-4h8" secondAttribute="bottom" constant="-3" id="pTX-T7-o2X"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ANv-lu-4h8" secondAttribute="trailing" id="vK3-Eb-Kmt"/>
                     <constraint firstItem="qz6-wU-R2o" firstAttribute="trailing" secondItem="HrZ-PO-M8e" secondAttribute="trailingMargin" id="wkV-Jk-jQB"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="cityLabel" destination="123-pf-ftz" id="qUs-Os-L8X"/>
-                <outlet property="daysLabel" destination="Uav-hf-hbm" id="vfe-BI-jox"/>
                 <outlet property="packageImage" destination="ANv-lu-4h8" id="unU-au-4tg"/>
-                <outlet property="peopleLabel" destination="Sv4-Vp-S2Z" id="wl9-aL-u9L"/>
                 <outlet property="priceLabel" destination="qz6-wU-R2o" id="SZ5-fk-8oV"/>
             </connections>
             <point key="canvasLocation" x="264" y="307.5"/>
