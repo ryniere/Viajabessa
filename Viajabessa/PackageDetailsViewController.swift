@@ -77,6 +77,13 @@ class PackageDetailsViewController: UIViewController {
 		GAI.sharedInstance().defaultTracker.send(event)
 		GAI.sharedInstance().dispatch()
 		
+		let alert = UIAlertView()
+		alert.title = "Pacote comprado"
+		alert.message = "Boa viagem"
+		alert.addButtonWithTitle("Ok")
+		alert.delegate = self
+		alert.show()
+		
 	}
     /*
     // MARK: - Navigation
