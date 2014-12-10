@@ -14,14 +14,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Para onde você quer ir?" id="Nff-YM-CZ4">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="X5O-aN-4Un" id="mkY-eN-65Y"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="GKn-zN-FFm">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GKn-zN-FFm" id="8ia-vf-Y5W">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="X5O-aN-4Un" id="BzJ-9F-zc5"/>
                             <outlet property="delegate" destination="X5O-aN-4Un" id="gLh-Se-djT"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Pacotes de Viagens" id="lSY-X2-Al5"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="0L9-qr-B8E" id="iFO-fS-Q0b"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HNb-Uq-aT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="qrk-xD-s3y">
+                    <connections>
+                        <outlet property="delegate" destination="X5O-aN-4Un" id="04u-fh-HnY"/>
+                        <outlet property="searchContentsController" destination="X5O-aN-4Un" id="Iqz-Ay-Yed"/>
+                        <outlet property="searchResultsDataSource" destination="X5O-aN-4Un" id="nzN-iB-DEq"/>
+                        <outlet property="searchResultsDelegate" destination="X5O-aN-4Un" id="4nr-3v-ix3"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="0L9-qr-B8E">
+                    <connections>
+                        <outlet property="delegate" destination="X5O-aN-4Un" id="fxm-ei-UlE"/>
+                        <outlet property="searchBar" destination="Nff-YM-CZ4" id="ZVM-r9-bNz"/>
+                        <outlet property="searchContentsController" destination="X5O-aN-4Un" id="Ba1-Uc-CM4"/>
+                        <outlet property="searchResultsDataSource" destination="X5O-aN-4Un" id="OET-m1-out"/>
+                        <outlet property="searchResultsDelegate" destination="X5O-aN-4Un" id="Byb-Lh-Gvh"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="467" y="-74"/>
         </scene>
