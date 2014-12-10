@@ -13,6 +13,7 @@ class PackageDetailsViewController: UIViewController {
 	@IBOutlet weak var packageImage: UIImageView!
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var descriptionLabel: UILabel!
+	@IBOutlet weak var priceLabel: UILabel!
 
 	
 	var package:Package!
@@ -46,6 +47,7 @@ class PackageDetailsViewController: UIViewController {
 		self.packageImage.image = package.image
 		self.titleLabel.text = package.title
 		self.descriptionLabel.text = package.description
+		self.priceLabel.text = NSString(format:"%@%.2f", package.currency, package.price)
     }
 
     override func didReceiveMemoryWarning() {
