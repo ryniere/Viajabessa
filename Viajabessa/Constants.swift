@@ -11,3 +11,5 @@ import Foundation
 let SERVER_URL = "http://private-1bc06-viajabessa10.apiary-mock.com/"
 
 let LIST_ALL_PACKAGES_URL = SERVER_URL + "packages"
+
+let GOOGLE_ANALYTICS_TRACK_ID = "UA-57545845-1"

@@ -16,11 +16,25 @@ import Crashlytics
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
+	var tracker:GAITracker!
 
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		//Frabric setup
 		Fabric.with([Crashlytics()])
+		
+		
+		//Google Analytics
+		GAI.sharedInstance().dispatchInterval = -1;
+		
+		GAI.sharedInstance().trackUncaughtExceptions = true;
+		self.tracker = GAI.sharedInstance().trackerWithName("LeiSecaMaps",
+			trackingId:GOOGLE_ANALYTICS_TRACK_ID)
+		
+		self.tracker.allowIDFACollection = true;
+		
 		return true
 	}
 

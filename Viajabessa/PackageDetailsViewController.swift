@@ -48,6 +48,16 @@ class PackageDetailsViewController: UIViewController {
 		self.titleLabel.text = package.title
 		self.descriptionLabel.text = package.description
 		self.priceLabel.text = NSString(format:"%@%.2f", package.currency, package.price)
+		
+		
+		// Google Analytics
+		var dictionaryBuilder:GAIDictionaryBuilder = GAIDictionaryBuilder.createEventWithCategory("PackageDetails",
+			action:"viewPackageDeitails",
+			label:package.id,
+			value:nil)
+		var event:NSMutableDictionary = dictionaryBuilder.build()
+		GAI.sharedInstance().defaultTracker.send(event)
+		GAI.sharedInstance().dispatch()
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,6 +66,18 @@ class PackageDetailsViewController: UIViewController {
     }
     
 
+	@IBAction func buyPackageButton(sender: AnyObject) {
+		
+		// Google Analytics
+		var dictionaryBuilder:GAIDictionaryBuilder = GAIDictionaryBuilder.createEventWithCategory("BuyPackage",
+			action:"viewPackageDeitails",
+			label:package.id,
+			value:nil)
+		var event:NSMutableDictionary = dictionaryBuilder.build()
+		GAI.sharedInstance().defaultTracker.send(event)
+		GAI.sharedInstance().dispatch()
+		
+	}
     /*
     // MARK: - Navigation
 
