@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		411E24F31A3625900003E1AC /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E24F21A3625900003E1AC /* GlobalVariables.swift */; };
+		411E24F71A3793E20003E1AC /* PackageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E24F61A3793E20003E1AC /* PackageDetailsViewController.swift */; };
 		41DA2E051A34B49200FE914A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E041A34B49200FE914A /* AppDelegate.swift */; };
 		41DA2E081A34B49200FE914A /* Viajabessa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E061A34B49200FE914A /* Viajabessa.xcdatamodeld */; };
 		41DA2E0A1A34B49200FE914A /* ListPackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2E091A34B49200FE914A /* ListPackagesViewController.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		411E24F21A3625900003E1AC /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		411E24F61A3793E20003E1AC /* PackageDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageDetailsViewController.swift; sourceTree = "<group>"; };
 		41DA2DFF1A34B49200FE914A /* Viajabessa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viajabessa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DA2E031A34B49200FE914A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41DA2E041A34B49200FE914A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				41DA2E461A34FE3500FE914A /* TableCells */,
 				41DA2E091A34B49200FE914A /* ListPackagesViewController.swift */,
+				411E24F61A3793E20003E1AC /* PackageDetailsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				41DA2E081A34B49200FE914A /* Viajabessa.xcdatamodeld in Sources */,
 				41DA2E051A34B49200FE914A /* AppDelegate.swift in Sources */,
 				41DA2E4D1A35039100FE914A /* Constants.swift in Sources */,
+				411E24F71A3793E20003E1AC /* PackageDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

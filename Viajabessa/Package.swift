@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 class Package{
@@ -18,8 +19,10 @@ class Package{
 	var price:Double = 0.0
 	var currency:String!
 	var imageUrl:String!
+	var image:UIImage!
+	var description:String!
 	
-	init(id:String, title:String, city:String, days:Int, price:Double, currency:String, imageUrl:String){
+	init(id:String, title:String, city:String, days:Int, price:Double, currency:String, imageUrl:String, description:String){
 		
 		self.id = id
 		self.title = title
@@ -28,5 +31,6 @@ class Package{
 		self.price = price
 		self.currency = currency
 		self.imageUrl = imageUrl
+		self.description = description
 		}
 }

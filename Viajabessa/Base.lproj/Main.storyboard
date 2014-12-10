@@ -1,27 +1,108 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eWx-nC-EhL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bet-p3-UZY">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--List Packages View Controller-->
-        <scene sceneID="AAJ-0v-HMu">
+        <!--Pacotes de Viagens-->
+        <scene sceneID="2TP-3i-wBg">
             <objects>
-                <tableViewController storyboardIdentifier="ListPackagesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eWx-nC-EhL" customClass="ListPackagesViewController" customModule="Viajabessa" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="195" sectionHeaderHeight="22" sectionFooterHeight="22" id="nbe-z6-TDh">
+                <tableViewController id="X5O-aN-4Un" customClass="ListPackagesViewController" customModule="Viajabessa" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Pxv-1K-MRo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
-                            <outlet property="dataSource" destination="eWx-nC-EhL" id="JHv-F2-ypK"/>
-                            <outlet property="delegate" destination="eWx-nC-EhL" id="OEE-JX-Yfn"/>
+                            <outlet property="dataSource" destination="X5O-aN-4Un" id="BzJ-9F-zc5"/>
+                            <outlet property="delegate" destination="X5O-aN-4Un" id="gLh-Se-djT"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Pacotes de Viagens" id="lSY-X2-Al5"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JRg-z2-fpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HNb-Uq-aT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="183"/>
+            <point key="canvasLocation" x="467" y="-74"/>
+        </scene>
+        <!--Package Details View Controller-->
+        <scene sceneID="ceN-vi-MWo">
+            <objects>
+                <viewController storyboardIdentifier="PackageDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OIv-kc-hs9" customClass="PackageDetailsViewController" customModule="Viajabessa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tBu-M8-au1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hm7-hR-8QU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nwp-H7-5dM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZ4-tU-c9t">
+                                <rect key="frame" x="0.0" y="125" width="320" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="bac-Yk-CII"/>
+                                    <constraint firstAttribute="height" constant="163" id="dqF-x8-PKY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ano novo no Rio com visita ao Cristo Redentor" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGe-XT-bW6">
+                                <rect key="frame" x="16" y="62" width="276" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Passe o ano novo na Cidade Maravilhosa. 10 dias incriveis com direito a visita ao Cristo Redentor" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXa-7X-XhS">
+                                <rect key="frame" x="16" y="291" width="288" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="rMF-fN-rOe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRB-ML-oAg">
+                                <rect key="frame" x="231" y="518" width="73" height="30"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Comprar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yXa-7X-XhS" firstAttribute="leading" secondItem="Nwp-H7-5dM" secondAttribute="leadingMargin" id="5jd-bB-Zjx"/>
+                            <constraint firstItem="FRB-ML-oAg" firstAttribute="trailing" secondItem="Nwp-H7-5dM" secondAttribute="trailingMargin" id="6VN-f8-A6j"/>
+                            <constraint firstItem="Hm7-hR-8QU" firstAttribute="top" secondItem="FRB-ML-oAg" secondAttribute="bottom" constant="20" id="NWV-3A-gmK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hZ4-tU-c9t" secondAttribute="trailing" id="eaM-dT-hKq"/>
+                            <constraint firstItem="hZ4-tU-c9t" firstAttribute="leading" secondItem="Nwp-H7-5dM" secondAttribute="leadingMargin" id="n9K-NN-HKa"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="yXa-7X-XhS" id="rkz-I4-WIc"/>
+                        <outlet property="packageImage" destination="hZ4-tU-c9t" id="OUW-FP-xXe"/>
+                        <outlet property="titleLabel" destination="hGe-XT-bW6" id="sfI-x8-83h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TuC-sc-yzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="-90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="330-lP-Mt5">
+            <objects>
+                <navigationController id="bet-p3-UZY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VDo-HE-Ll4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="X5O-aN-4Un" kind="relationship" relationship="rootViewController" id="08J-3a-Tqc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTX-68-NiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-353" y="-74"/>
         </scene>
     </scenes>
 </document>

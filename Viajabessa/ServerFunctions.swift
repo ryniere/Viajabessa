@@ -56,8 +56,9 @@ func getPackagesFromServer( onCompletation: () -> Void, onFailure: () -> Void){
 				var currency:String = package["currency"] as String!
 				var days:Int = package["days"] as Int!
 				var imageUrl:String = package["imageUrl"] as String!
+				var description:String  = package["description"] as String!
 				
-				var newPackage = Package(id: id, title: title, city: city, days: days, price: price, currency: currency, imageUrl:imageUrl)
+				var newPackage = Package(id: id, title: title, city: city, days: days, price: price, currency: currency, imageUrl:imageUrl, description:description)
 				
 				packagesList.append(newPackage)
 				
