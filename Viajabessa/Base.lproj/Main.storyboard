@@ -103,12 +103,20 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$3000,00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFS-Py-06O">
+                                <rect key="frame" x="16" y="527" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yXa-7X-XhS" firstAttribute="leading" secondItem="Nwp-H7-5dM" secondAttribute="leadingMargin" id="5jd-bB-Zjx"/>
                             <constraint firstItem="FRB-ML-oAg" firstAttribute="trailing" secondItem="Nwp-H7-5dM" secondAttribute="trailingMargin" id="6VN-f8-A6j"/>
                             <constraint firstItem="Hm7-hR-8QU" firstAttribute="top" secondItem="FRB-ML-oAg" secondAttribute="bottom" constant="20" id="NWV-3A-gmK"/>
+                            <constraint firstItem="BFS-Py-06O" firstAttribute="leading" secondItem="Nwp-H7-5dM" secondAttribute="leadingMargin" id="Zjq-at-3eP"/>
+                            <constraint firstItem="Hm7-hR-8QU" firstAttribute="top" secondItem="BFS-Py-06O" secondAttribute="bottom" constant="20" id="duK-kV-THX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hZ4-tU-c9t" secondAttribute="trailing" id="eaM-dT-hKq"/>
                             <constraint firstItem="hZ4-tU-c9t" firstAttribute="leading" secondItem="Nwp-H7-5dM" secondAttribute="leadingMargin" id="n9K-NN-HKa"/>
                         </constraints>
@@ -117,6 +125,7 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="yXa-7X-XhS" id="rkz-I4-WIc"/>
                         <outlet property="packageImage" destination="hZ4-tU-c9t" id="OUW-FP-xXe"/>
+                        <outlet property="priceLabel" destination="BFS-Py-06O" id="KVY-Mr-nJN"/>
                         <outlet property="titleLabel" destination="hGe-XT-bW6" id="sfI-x8-83h"/>
                     </connections>
                 </viewController>
