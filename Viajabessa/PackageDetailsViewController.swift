@@ -84,6 +84,15 @@ class PackageDetailsViewController: UIViewController {
 		alert.delegate = self
 		alert.show()
 		
+		
+	}
+	
+	func alertView(view :UIAlertView, clickedButtonAtIndex :Int) -> Void {
+		
+		if(clickedButtonAtIndex == 0){
+			self.navigationController?.popViewControllerAnimated(true)
+		}
+		
 	}
     /*
     // MARK: - Navigation
