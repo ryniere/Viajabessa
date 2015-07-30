@@ -31,7 +31,7 @@ class PackageDetailsViewController: UIViewController {
 	class func forPackage(package: Package) -> PackageDetailsViewController {
 		let storyboard = UIStoryboard(name: StoryboardConstants.storyboardName, bundle: nil)
 		
-		let viewController = storyboard.instantiateViewControllerWithIdentifier(StoryboardConstants.viewControllerIdentifier) as PackageDetailsViewController
+		let viewController = storyboard.instantiateViewControllerWithIdentifier(StoryboardConstants.viewControllerIdentifier) as! PackageDetailsViewController
 		
 		viewController.package = package
 		
@@ -47,7 +47,7 @@ class PackageDetailsViewController: UIViewController {
 		self.packageImage.image = package.image
 		self.titleLabel.text = package.title
 		self.descriptionLabel.text = package.description
-		self.priceLabel.text = NSString(format:"%@%.2f", package.currency, package.price)
+		self.priceLabel.text = NSString(format:"%@%.2f", package.currency, package.price) as String
 		
 		
 		// Google Analytics
@@ -56,7 +56,7 @@ class PackageDetailsViewController: UIViewController {
 			label:package.id,
 			value:nil)
 		var event:NSMutableDictionary = dictionaryBuilder.build()
-		GAI.sharedInstance().defaultTracker.send(event)
+		GAI.sharedInstance().defaultTracker.send(event as [NSObject : AnyObject])
 		GAI.sharedInstance().dispatch()
     }
 
@@ -74,7 +74,7 @@ class PackageDetailsViewController: UIViewController {
 			label:package.id,
 			value:nil)
 		var event:NSMutableDictionary = dictionaryBuilder.build()
-		GAI.sharedInstance().defaultTracker.send(event)
+		GAI.sharedInstance().defaultTracker.send(event as [NSObject : AnyObject])
 		GAI.sharedInstance().dispatch()
 		
 		let alert = UIAlertView()

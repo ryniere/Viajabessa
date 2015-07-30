@@ -12,7 +12,7 @@ import UIKit
 func parseJSON(inputData: NSData) -> NSDictionary{
 	var error: NSError?
 	
-	var boardsDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers, error: &error) as NSDictionary
+	var boardsDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers, error: &error) as! NSDictionary
 	return boardsDictionary
 }
 
@@ -49,14 +49,14 @@ func getPackagesFromServer( onCompletation: () -> Void, onFailure: () -> Void){
 			packagesList = []
 			for package in packages{
 				
-				var id:String = package["id"] as String!
-				var title:String = package["title"] as String!
-				var price:Double = package["price"] as Double!
-				var city:String = package["city"] as String!
-				var currency:String = package["currency"] as String!
-				var days:Int = package["days"] as Int!
-				var imageUrl:String = package["imageUrl"] as String!
-				var description:String  = package["description"] as String!
+				var id:String = package["id"] as! String!
+				var title:String = package["title"] as! String!
+				var price:Double = package["price"] as! Double!
+				var city:String = package["city"] as! String!
+				var currency:String = package["currency"] as! String!
+				var days:Int = package["days"] as! Int!
+				var imageUrl:String = package["imageUrl"] as! String!
+				var description:String  = package["description"] as! String!
 				
 				var newPackage = Package(id: id, title: title, city: city, days: days, price: price, currency: currency, imageUrl:imageUrl, description:description)
 				

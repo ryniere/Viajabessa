@@ -53,7 +53,7 @@ class ListPackagesViewController: UITableViewController, UISearchBarDelegate, UI
 	func configureCell(cell: ListPackagesTableViewCell, forPackage package: Package) {
 		
 		cell.cityLabel.text = package.city
-		cell.priceLabel.text = NSString(format:"%@%.2f", package.currency, package.price)
+		cell.priceLabel.text = NSString(format:"%@%.2f", package.currency, package.price) as String
 		
 		downloadImage(NSURL(string: package.imageUrl)!, {image, error in
 			
@@ -88,7 +88,7 @@ class ListPackagesViewController: UITableViewController, UISearchBarDelegate, UI
 	}
 	
 	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCellWithIdentifier(TableCellConstants.TableViewCell.identifier, forIndexPath: indexPath) as ListPackagesTableViewCell
+		let cell = tableView.dequeueReusableCellWithIdentifier(TableCellConstants.TableViewCell.identifier, forIndexPath: indexPath) as! ListPackagesTableViewCell
 		
 		var package: Package
 		if tableView == self.searchDisplayController!.searchResultsTableView {
@@ -132,17 +132,17 @@ class ListPackagesViewController: UITableViewController, UISearchBarDelegate, UI
 		
 	}
 	
-	func searchDisplayController(controller: UISearchDisplayController!, shouldReloadTableForSearchString searchString: String!) -> Bool {
+	func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String!) -> Bool {
 		
 		self.filterContentForSearchText(searchString)
 		return true
 		
 	}
 	
-	func searchDisplayController(controller: UISearchDisplayController!,
+	func searchDisplayController(controller: UISearchDisplayController,
 		shouldReloadTableForSearchScope searchOption: Int) -> Bool {
 			
-			let scope = self.searchDisplayController!.searchBar.scopeButtonTitles as [String]
+			let scope = self.searchDisplayController!.searchBar.scopeButtonTitles as! [String]
 			self.filterContentForSearchText(self.searchDisplayController!.searchBar.text)
 			return true
 			
